@@ -1,0 +1,154 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Jost', sans-serif; /* Ensuring Jost is used globally */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+/* V Container & Letter */
+.v-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.v-letter {
+    color: white;
+    font-size: 30em;
+    font-weight: 300;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.contact-email {
+    margin-top: 100px; /* Adjust space between the navigation bar and the email link */
+    text-align: center; /* Centers the email link on the page */
+    font-size: 1.2em; /* Increases the size of the email link for visibility */
+}
+
+
+/* Page-specific backgrounds */
+.index-page { background-image: url('../images/background_index.jpeg'); }
+.contact-page { background-image: url('../images/background_contact.jpeg'); }
+.jobs-page { background-image: url('../images/background_jobs.jpeg'); }
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.email-link a {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+/* Job Listings */
+.job-listings {
+    padding: 100px;
+    margin: 0 auto;
+    max-width: 800px; /* Restricting width for readability */
+}
+
+.job-listings h2, .job h3 {
+    color: #ffffff; /* Keeping colors subdued for a minimalistic look */
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.job p {
+    font-size: 1rem; /* Keeping font size standard for simplicity */
+    color: #ffffff; /* Lighter text color for minimalistic design */
+    margin: 0em 0 0em; /* Adjusting spacing for clarity */
+}
+
+.job a {
+    font-weight: 400;
+    color: #ffffff; /* Using the same blue for a pop of color on links */
+    text-decoration: underline; /* Underline to denote clickable links */
+}
+
+.links-container {
+    display: flex;
+    gap: 25px; /* Creates space between any child elements */
+}
+
+.language-toggle {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
+    padding: 0;
+    font-family: 'Jost', sans-serif; /* Ensures font consistency */
+}
+
+.language-toggle button {
+    background-color: transparent; /* No background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    font-size: 16px; /* Adjust based on your design */
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 5px; /* Reduces space between buttons */
+    padding: 0 5px; /* Adjust padding as needed */
+}
+
+.language-toggle button:first-child {
+    margin-left: 0; /* Removes margin from the first button */
+}
+
+.language-toggle button:hover {
+    color: #CCCCCC; /* Light grey color on hover for visual feedback */
+}
+
+
+
+
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .job-listings {
+        padding: 10px;
+    }
+}
+
